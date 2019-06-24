@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="w-100">
+      <h2>Posts</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="w-100">
+      <ul class="list-group">
+        <!-- on parcourt le tableau des posts 
+    on passe en parametre un post
+[post] correspond a l'attribut qui est dans postlistitemcomponent
+"post" correspond a l'attribut qui est dans postlistcomponent 
+-->
+        <app-postlistitem *ngFor="let post of posts" [post]="post"></app-postlistitem>
+      </ul>
+    </div>
+  </div>
